@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up as Teacher - Tutor Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">Tutor Gallery</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup-student.html">Sign Up as Student</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup-section animate-on-scroll">
+        <h2>Sign Up as a Teacher</h2>
+        <form action="#">
+            <label for="teacher-name">Name:</label>
+            <input type="text" id="teacher-name" required>
+            <span class="error-message"></span>
+
+            <label for="teacher-email">Email:</label>
+            <input type="email" id="teacher-email" required>
+            <span class="error-message"></span>
+
+            <label for="teacher-location">Location:</label>
+            <input type="text" id="teacher-location" required>
+            <span class="error-message"></span>
+
+            <label for="teacher-phone">Phone:</label>
+            <input type="tel" id="teacher-phone" required>
+            <span class="error-message"></span>
+
+            <label for="teacher-qualification">Qualification Proof (Upload):</label>
+            <input type="file" id="teacher-qualification" required>
+            <span class="error-message"></span>
+
+            <label for="teacher-id-proof">Government-issued ID Proof (Upload):</label>
+            <input type="file" id="teacher-id-proof" required>
+            <span class="error-message"></span>
+
+            <button type="submit" class="btn">Join Us</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content" id="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@tutorgallery.com | Phone: +1234567890</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
