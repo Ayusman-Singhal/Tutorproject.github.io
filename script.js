@@ -15,6 +15,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Theme toggle functionality
+const themeToggleButton = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme') || 'dark-mode';
+
+// Apply the stored theme when the page loads
+document.body.classList.add(currentTheme);
+if (currentTheme === 'light-mode') {
+    themeToggleButton.textContent = 'Dark Mode';
+}
+
+// Toggle theme on button click
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const theme = document.body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+    localStorage.setItem('theme', theme);
+    themeToggleButton.textContent = theme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+});
+
+
 // Form Validation Functionality
 const formElements = document.querySelectorAll('form');
 
