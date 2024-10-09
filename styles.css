@@ -31,6 +31,12 @@ nav .logo h1 a {
     text-decoration: none;
 }
 
+nav .logo h1 a:hover {
+    color: #e91e63;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
 nav .nav-links {
     list-style: none;
 }
@@ -51,9 +57,24 @@ nav .nav-links a:hover {
     color: #ff4081;
 }
 
+.theme-toggle:hover{
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.theme-toggle{
+    background-color: #e91e63;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 /* Hero Section */
 .hero {
-    background-image: url('https://source.unsplash.com/featured/?education');
+    background: linear-gradient(to right, #1e1e1e, #121212);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -85,7 +106,7 @@ nav .nav-links a:hover {
 }
 
 .hero-buttons .btn:hover {
-    background-color: #e91e63;
+    background-color: #333;
     transform: scale(1.05);
 }
 
@@ -112,8 +133,8 @@ nav .nav-links a:hover {
 }
 
 .signup-section form {
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
@@ -164,7 +185,7 @@ nav .nav-links a:hover {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background: url('https://source.unsplash.com/featured/?education') no-repeat center center/cover;
+    background-image: url('resources\images\image01.jpgs') no-repeat center center/cover;
 }
 
 .login-container {
@@ -251,4 +272,127 @@ footer .footer-content h3 {
 
 footer .footer-content p {
     color: #aaa;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background: linear-gradient(to bottom, #e0e0e0, #cdcdcd);
+    color: #333;
+}
+
+body.light-mode header, body.light-mode footer {
+    background-color: #e0e0e0;
+}
+
+body.light-mode nav .nav-links a {
+    color: #333;
+}
+
+body.light-mode nav .nav-links a:hover {
+    color: #ff4081;
+    transform: scale(1.05);
+}
+
+body.light-mode .hero {
+    background-color: #fafafa;
+    color: #333;
+}
+
+body.light-mode .hero {
+    background: linear-gradient(to top, #bab9b9, #cfcfd0);
+}
+
+/* Other Light Mode Styles */
+body.light-mode .about-section, 
+body.light-mode .signup-section, 
+body.light-mode .login-section {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+body.light-mode .signup-section input, 
+body.light-mode .login-section input {
+    background: #adacac;
+    color: #333;
+    border-color: #ddd;
+}
+
+body.light-mode .signup-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 240, 240, 0.8);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(157, 156, 156, 0.5);
+}
+
+body.light-mode .login-container{
+    background: rgba(232, 231, 231, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(184, 184, 184, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+body.light-mode .signup-link {
+    margin-top: 1rem;
+    color: #242424;
+}
+
+body.light-mode .btn, 
+body.light-mode .login-btn {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.light-mode .theme-toggle{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body.light-mode .login-btn:hover, 
+body.light-mode .theme-toggle:hover {
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+body.light-mode .hero-buttons .btn:hover {
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+body.light-mode nav .logo h1 a {
+    color: #212121;
+    text-decoration: none;
+}
+
+body.light-mode nav .logo h1 a:hover {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+body.light-mode header {
+    background-color: #d7d7d7;
+    padding: 1rem 0;
+}
+
+
+body.light-mode footer,
+body.light-mode footer .footer-content p {
+    color: #2b2a2a;
+    font-weight: bold;
+}
+
+body.light-mode footer {
+    background-color: #cfcfcf;
+    padding: 1.5rem;
+    text-align: center;
 }
